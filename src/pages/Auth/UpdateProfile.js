@@ -44,7 +44,7 @@ const UpdateProfile = () => {
     return (
         <>
         <div className="h-screen flex items-center justify-center bg-slate-100">
-            <div className="max-w-xs w-full space-y-8">
+            <div className="border drop-shadow-2xl bg-white rounded-lg py-9 px-4 max-w-xs w-full space-y-8">
                 <div>
                     <h2 className="text-center text-3xl tracking-tight font-bold text-gray-900">
                         Sign Up
@@ -70,7 +70,7 @@ const UpdateProfile = () => {
                                 type="email"
                                 autoComplete="email"
                                 required
-                                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                                className="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500  focus:z-10 sm:text-sm"
                                 placeholder="Email"
                             />
                         </div>
@@ -84,12 +84,11 @@ const UpdateProfile = () => {
                                 name="password"
                                 type="password"
                                 autoComplete="current-password"
-                                className="mt-4 appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                                className="mt-4 appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500  focus:z-10 sm:text-sm"
                                 placeholder="Leave blank to keep the same"
                             />
                         </div>
-
-                        <div>
+<div>
                             <label htmlFor="password-confirm" className="sr-only">
                                 Password Confirm
                             </label>
@@ -99,7 +98,7 @@ const UpdateProfile = () => {
                                 name="password"
                                 type="password"
                                 autoComplete="current-password"
-                                className="mt-4 appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                                className="mt-4 appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:z-10 sm:text-sm"
                                 placeholder="Leave blank to keep the same"
                             />
                         </div>
@@ -108,7 +107,7 @@ const UpdateProfile = () => {
                     <div>
                         <button
                             type="submit"
-                            className="group relative w-full flex justify-center items-center py-2 px-4 border border-transparent text-sm font-medium text-white bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                            className="group mx-auto flex justify-center items-center py-2 px-7 rounded border border-transparent text-sm font-medium text-white bg-orange-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                         >
                             <span className="absolute left-0 inset-y-0 flex items-center pl-3">
                                 {
@@ -131,7 +130,7 @@ const UpdateProfile = () => {
                         </button>
                     </div>
                     <div className="!mt-4">
-                        <Link className="font-medium text-indigo-600 hover:text-indigo-500" to={"/"}>Cancel</Link>
+                        <Link className="font-medium text-center text-black hover:text-amber-600" to={"/"}>Cancel</Link>
                     </div>
                 </form>
             </div>
